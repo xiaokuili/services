@@ -24,4 +24,4 @@ def text_to_speech():
     return send_file(byte_io, mimetype='audio/wav')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=8721)
