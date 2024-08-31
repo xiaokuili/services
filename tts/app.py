@@ -1,8 +1,10 @@
 from flask import Flask, request, send_file
+from flask_cors import CORS
 from TTS.api import TTS
 import io
 
 app = Flask(__name__)
+CORS(app)  # 这将允许所有域的跨域请求
 
 # Initialize TTS
 tts = TTS(model_name="tts_models/en/ljspeech/tacotron2-DDC", progress_bar=False)
