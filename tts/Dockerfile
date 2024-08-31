@@ -10,6 +10,6 @@ RUN pip install TTS flask
 
 COPY app.py .
 
-EXPOSE 5000
+EXPOSE 8721
 
 CMD ["python", "app.py"]
